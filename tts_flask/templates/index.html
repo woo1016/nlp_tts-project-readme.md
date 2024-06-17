@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Text to Speech Conversion</h1>
+    </header>
+    <main>
+        <section>
+            <form id="speechForm">
+                <textarea name="text" rows="4" cols="50" placeholder="Enter your text here..."></textarea>
+                <button type="button" onclick="synthesizeText()">Convert to Speech</button>
+            </form>
+        </section>
+        <section>
+            <audio controls id="audioPlayer">
+                <source src="" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Text to Speech App</p>
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+</html>
